@@ -2,85 +2,107 @@
 <html>
     <head>
         <title>Relaxr</title>
+         <!-- external link to fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,300,300italic' rel='stylesheet' type='text/css'>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <meta name="description" content="Relaxr">
     	<meta name="keywords" content="Get peace of mind with a single tap"> 
-      
-        <!-- external link to fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,300,300italic' rel='stylesheet' type='text/css'>
-        
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
-    <body>
-      <header>
+    <body>  
+      
+        <header><!-- top navigation -->
             <h1>Relaxr</h1>
             <nav>
-                <a href="About">About</a>
-                <a href="FAQ">FAQ</a>
-                <a href="Team">Team</a>
-                <a href="Contat Us">Contact Us</a>
-                <a href="Blog">Blog</a>
+                <a href="#About">About</a>
+                <a href="#FAQ">FAQ</a>
+                <a href="#Team">Team</a>
+                <a href="#Contact">Contact Us</a>
+                <a href="#Blog">Blog</a>
             </nav>
         </header>
         
         <div class="container">
-        
         <div class="main-content">
-               <article>
-                   <h2>How I implemented Relaxr in 2 weeks and changed my life.</h2>
-                   <img src="img/blog_photo1.jpg" alt="rowing competition">
-                   <p class="first-letter">L</p><p>orem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nesciunt quod reprehenderit fuga voluptates, temporibus repellendus, eveniet non accusamus, distinctio cumque iusto amet fugit quaerat sapiente natus! Doloribus excepturi, soluta.</p>
-                   <div class="read-more">
-                       <a href="#">Read more &gt;</a>
-                   </div>
-                   <hr noshade size=1px>
-               </article>
-                <article>
-                   <h2>I Traveled across the globe thanks to Relaxr&rsquo;s Excel automation</h2>
-                   <img src="img/blog_photo2.jpg" alt="boats">
-                    <p class="first-letter">L</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tenetur quisquam nemo porro voluptatibus ex unde eligendi iure autem at, soluta totam fugiat, sed minus aspernatur, nostrum quibusdam quis quos.</p>
-                   <div class="read-more">
-                       <a href="#">Read more &gt;</a>
-                   </div>
-                   <hr noshade size=1px>
-               </article>
-           </div> <!-- end of main content -->
-        <div class="right-content">
+            <h2>How I implemented Relaxr in 2 weeks and changed my life.</h2>
+            
+            <img src="img/blog_photo1.jpg" alt="rowing competition">
+            
+            <p class="caps">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nesciunt quod reprehenderit fuga voluptates, temporibus repellendus, eveniet non accusamus, distinctio cumque iusto amet fugit quaerat sapiente natus! Doloribus excepturi, soluta.</p>
+            
+            <div class="read-more1">
+                <a href="#" id="read-more1">Read More</a>
+            </div>
+            <div id="article1"  style="display: none;"> <!-- first article -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nesciunt quod reprehenderit fuga voluptates, temporibus repellendus, eveniet non accusamus, distinctio cumque iusto amet fugit quaerat sapiente natus! Doloribus excepturi, soluta.</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nesciunt quod reprehenderit fuga voluptates, temporibus repellendus, eveniet non accusamus, distinctio cumque iusto amet fugit quaerat sapiente natus! Doloribus excepturi, soluta.</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nesciunt quod reprehenderit fuga voluptates, temporibus repellendus, eveniet non accusamus, distinctio cumque iusto amet fugit quaerat sapiente natus! Doloribus excepturi, soluta.</p>
+            </div>
+            
+            <hr>
+            
+            <h2>I Traveled across the globe thanks to Relaxr&rsquo;s Excel automation</h2>
+            
+            <img src="img/blog_photo2.jpg" alt="boats">
+            
+            <p class="caps">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tenetur quisquam nemo porro voluptatibus ex unde eligendi iure autem at, soluta totam fugiat, sed minus aspernatur, nostrum quibusdam quis quos.</p>
+            <div class="read-more2">
+                <a href="#" id="read-more2">Read More</a>
+            </div>
+            
+            <div id="article2"  style="display: none;"><!-- second article -->
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nesciunt quod reprehenderit fuga voluptates, temporibus repellendus, eveniet non accusamus, distinctio cumque iusto amet fugit quaerat sapiente natus! Doloribus excepturi, soluta.</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nesciunt quod reprehenderit fuga voluptates, temporibus repellendus, eveniet non accusamus, distinctio cumque iusto amet fugit quaerat sapiente natus! Doloribus excepturi, soluta.</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a eaque illum aliquid nisi neque earum dolor, tenetur animi. In accusamus consequuntur ea ullam laboriosam incidunt neque deserunt quis quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nesciunt quod reprehenderit fuga voluptates, temporibus repellendus, eveniet non accusamus, distinctio cumque iusto amet fugit quaerat sapiente natus! Doloribus excepturi, soluta.</p>
+            </div>
+            <hr>
+            
+            </div>
+            
+            
+           </div> <!-- end of left hand content -->
+        
+        <div class="right-content"> <!-- beginning of right hand content -->
            <section>
                <h3>Categories</h3>
                <nav>
                    <ul>
                        <li><a href="#">Success stories</a></li>
                        <li><a href="#">Stats</a></li>
-                       <li><a href="#">How tos</a></si>
+                       <li><a href="#">How tos</a></li>
                        <li><a href="#">Best of</a></li>
                        <li><a href="#">Business tips</a></li>
                    </ul>
                </nav>
            </section><!-- end category section -->
-          <section>
-               <h3>About Relaxr</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolor, error aliquid non, tempore, dolorum sapiente a perferendis hic sunt repellendus aliquam expedita voluptatum nesciunt officia optio veniam accusamus quis.</p>
-               <div class="learn-more">
-                   <a href="#">Learn More</a>
+            
+            <section>
+                <h3>About Relaxr</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolor, error aliquid non, tempore, dolorum sapiente a perferendis hic sunt repellendus aliquam expedita voluptatum nesciunt officia optio veniam accusamus quis.</p>
+                <div class="learn-more">
+                    <a href="#">Learn More</a>
                </div>
-           </section><!-- end of about setion -->
-           <aside>
+            </section><!-- end of about setion -->
+            
+            <aside><!-- add placeholder -->
                <img src="img/ad-unit.png" alt="ad placeholder">
            </aside>
-         </div>  <!-- end of right container -->
-         <div class="sign-up">
-         <p>sign-up now</p>
-        </div>
-         <footer class="clear">
-          <h4>Relaxr</h4> 
-          <img src="img/twitter.png">
-          <img src="img/facebook.png">
-          <p>Copyright 2015. Relaxr.</p>
-       </footer>
-       </div>        
-    </body>
-    
+        
+        </div>  <!-- end of right container -->
+   
+    <div class="sign-up"> <!-- sign up now section and footer-->
+        <a href="#">sign-up now</a>
+    </div>
+    <footer class="clear">
+        <h4>Relaxr</h4>
+        <img alt="Twitter" src="img/twitter.png">
+        <img alt="Facebook" src="img/facebook.png">
+        <p>Copyright 2015. Relaxr.</p>
+    </footer>
+       
+    </body>  
 </html>
